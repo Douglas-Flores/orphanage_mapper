@@ -23,11 +23,11 @@ function OrfanagesMap() {
                 </footer>
             </aside>
 
-            <MapContainer center={[-29.8857894,-51.1286724]} zoom={11} style={{ width: '100%', height: '100%' }} >
+            <MapContainer center={[-29.8857894,-51.1286724]} zoom={11} style={{ width: '100%', height: '100%' }} id="map" >
                 <TileLayer url="https://a.tile.openstreetmap.org/{z}/{x}/{y}.png" />
             </MapContainer>
 
-            <Link to="" className="create-orphanage">
+            <Link to="/" className="create-orphanage">
                 <FiPlus size={32} color="#FFF" />
             </Link>
         </div>

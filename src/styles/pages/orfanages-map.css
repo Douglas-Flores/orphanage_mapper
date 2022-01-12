@@ -59,3 +59,7 @@
 #page-map .create-orphanage:hover {
     background: #17d6eb;
 }
+
+#page-map #map {
+    z-index: -1;
+}
