@@ -42,15 +42,15 @@ export default function Orphanage() {
   const [orphanage, setOrphanage] = useState<Orphanage>();
   const [activeImageIndex, setActiveImageIndex] = useState(0);
 
-    useEffect(() => {
-        api.get(`orphanages/${params.id}`).then(response => {
-          setOrphanage(response.data);
-        })
-    },[params.id]);
+  useEffect(() => {
+    api.get(`orphanages/${params.id}`).then(response => {
+      setOrphanage(response.data);
+    })
+  },[params.id]);
 
-    if(!orphanage) {
-      return <p>Carregando...</p>
-    }
+  if(!orphanage) {
+    return <p>Carregando...</p>
+  }
 
   return (
     <div id="page-orphanage">
